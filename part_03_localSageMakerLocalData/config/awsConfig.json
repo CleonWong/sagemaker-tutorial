@@ -1,0 +1,4 @@
+{
+    "iam_role_arn": "arn:aws:iam::387826921024:role/cleon-sagemaker-test",
+    "s3_bucket": "cleon-sagemaker-test"
+}
