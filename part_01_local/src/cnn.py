@@ -41,11 +41,11 @@ def main():
     # =============
 
     train_cnn(
-        model=model, train_ds=train_ds, batch_size=500, epochs=10, learning_rate=0.0001
+        model=model, train_ds=train_ds, batch_size=500, epochs=1, learning_rate=0.0001
     )
 
     # Save trained model locally
-    model.save("../output/saved_model/trained_cnn.h5")
+    model.save("../output/saved_model")
 
     # ============
     #  Model pred

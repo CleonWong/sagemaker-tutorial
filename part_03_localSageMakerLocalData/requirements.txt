@@ -1,4 +1,0 @@
-jsonref
-numpy
-tensorflow
-sagemaker
