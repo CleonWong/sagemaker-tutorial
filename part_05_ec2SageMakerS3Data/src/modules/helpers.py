@@ -143,7 +143,7 @@ def train_cnn(model, train_ds, batch_size=50, epochs=10, learning_rate=0.0001):
 
 def save_model(model, dir):
 
-    model.save(os.path.join(dir, "1"))
+    model.save(dir)
     print(f"Model successfuly saved at: {dir}.")
 
     return

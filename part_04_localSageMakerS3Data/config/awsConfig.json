@@ -1,0 +1,6 @@
+{
+    "iam_role_arn": "arn:aws:iam::387826921024:role/cleon-sagemaker-test",
+    "s3_bucket": "cleon-sagemaker-test",
+    "s3_data_folder": "s3://cleon-sagemaker-test/data/",
+    "s3_saved_model_folder": "s3://cleon-sagemaker-test/output/saved_models/"
+}
