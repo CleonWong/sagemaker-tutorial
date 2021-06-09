@@ -1,0 +1,4 @@
+jsonref
+numpy
+tensorflow==2.4.1
+sagemaker==2.44.0

@@ -15,15 +15,18 @@ local_hyperparameters = {
     "batch_size": 500,
 }
 
+distribution = {"parameter_server": {"enabled": True}}
+
 tf_estimator = TensorFlow(
     entry_point="train_cnn.py",
     source_dir="./src",  # Directory of all the code and requirements.txt.
     output_path=aws_config["s3_saved_model_folder"],  # Save the trained model to S3.
     role=aws_config["iam_role_arn"],
-    instance_count=1,
+    instance_count=2,
     instance_type="ml.c4.xlarge",
     framework_version="2.4.1",
     py_version="py37",
+    distribution=distribution,
     hyperparameters=local_hyperparameters,  # SageMaker will turn this dict into command line arguments.
 )
 
